@@ -1,0 +1,90 @@
+# ============================================================
+#  PhishGuard — Intelligent Phishing Detection System
+#  Requirements File
+#  Author  : Tushar Solanki
+#  File    : requirements.txt
+#  Usage   : pip install -r requirements.txt
+# ============================================================
+
+# ------------------------------------------------------------
+#  REQUIRED — must be installed via pip
+# ------------------------------------------------------------
+
+# Web framework — serves the PhishGuard UI and REST API
+flask>=2.0.0
+
+# ------------------------------------------------------------
+#  OPTIONAL — install for extra features
+# ------------------------------------------------------------
+
+# HTTP client — required only for VirusTotal threat intelligence API
+# If not installed, threat intelligence lookups are automatically skipped
+requests>=2.28.0
+
+# ------------------------------------------------------------
+#  BUILT-IN (Python Standard Library) — no installation needed
+#  Listed here for documentation / dependency audit purposes
+# ------------------------------------------------------------
+
+# URL parsing — extract scheme, hostname, path, query, port
+# urllib.parse  (built-in)
+
+# Regular expressions — pattern matching for IP, encoding, TLD
+# re  (built-in)
+
+# SQLite database — local scan history persistence
+# sqlite3  (built-in)
+
+# JSON serialisation — API responses and export
+# json  (built-in)
+
+# CSV export — scan history download
+# csv  (built-in)
+
+# Cryptographic hashing — unique scan ID generation (SHA-1)
+# hashlib  (built-in)
+
+# Date and time — scan timestamps
+# datetime  (built-in)
+
+# Data classes — URLFeatures and ScanResult models
+# dataclasses  (built-in, Python 3.7+)
+
+# In-memory byte streams — CSV export without temp files
+# io  (built-in)
+
+# OS utilities — file paths, environment variables
+# os  (built-in)
+
+# Type hints — List, Dict, Optional, Tuple
+# typing  (built-in, Python 3.5+)
+
+# Path utilities — resolve absolute file paths
+# pathlib  (built-in, Python 3.4+)
+
+# Unit testing framework — automated test suite in notebook
+# unittest  (built-in)
+
+# System utilities — stdout stream for test runner
+# sys  (built-in)
+
+# ------------------------------------------------------------
+#  JUPYTER NOTEBOOK (for Tushar_Solanki_PhishGuard.ipynb only)
+#  Not needed to run the web app (app.py)
+# ------------------------------------------------------------
+
+# Jupyter Notebook environment
+# jupyter>=1.0.0
+
+# Interactive widgets for notebook UI
+# ipywidgets>=7.0.0
+
+# Charts and visualisations in notebook
+# matplotlib>=3.5.0
+
+# ------------------------------------------------------------
+#  PYTHON VERSION REQUIREMENT
+# ------------------------------------------------------------
+# Requires Python 3.9 or higher
+# Recommended: Python 3.12
+# Tested on: Python 3.12 (Windows 10)
